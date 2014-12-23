@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_planner_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/from" />
+
+            <EditText
+                android:id="@+id/edit_choose_dest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/choose_start" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/to" />
+
+            <EditText
+                android:id="@+id/edit_choose_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/choose_destination" >
+            </EditText>
+        </LinearLayout>
+        
+        <RadioGroup
+            android:id="@+id/radiogroup_arrive_departure"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="10dp"
+		    android:weightSum="2">
+            
+		    <RadioButton android:id="@+id/radio_depart"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/departure" 
+		        android:layout_weight="1"
+		        android:checked="true"/>
+		    
+		    <RadioButton android:id="@+id/radio_arrive"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/arrive"
+		        android:layout_weight="1"/>
+		    
+		</RadioGroup>
+		<LinearLayout
+		    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:weightSum="3">
+
+			<Spinner
+			    android:id="@+id/spinner_date"
+			    android:layout_width="0dp"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="2" />
+
+		    <Button
+			    android:id="@+id/button_time"
+			    android:layout_width="0dp"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    style="?android:attr/spinnerStyle" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		    
+		    <include
+		        android:id="@+id/layout_advance_settings"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp" 
+		        layout="@layout/advance_settings_layout"
+		        />
+                
+	       	<Button
+			    android:id="@+id/button_expand_settings"
+			    android:layout_width="fill_parent"
+			    android:singleLine="true"
+			    android:layout_height="30dp"
+			    android:text="@string/advance_settings"
+			    android:textSize="12sp"
+			    android:textColor="#0000FF"
+			    style="?android:attr/spinnerStyle" />	    
+		</LinearLayout>
+
+		<Button
+		    android:id="@+id/button_search_trip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/search_trip" />
+        
+    </LinearLayout>
+
+</ScrollView>

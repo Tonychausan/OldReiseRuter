@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reise Ruter</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Travel Planner -->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="choose_destination">Choose your destination</string>
+    <string name="choose_start">Choose your start place</string>
+    
+    <!-- Real-Time table -->
+    <string name="no_realtime_data">No real-time data available</string>
+    <string name="button_no_realtime_back">Back</string>
+    
+    
+    <string name="search">Search</string>
+    <string name="departure">Depart after:</string>
+    <string name="arrive">Arrive before:</string>
+    <string name="Today">Today</string>
+    <string name="Tomorrow">Tomorrow</string>
+    <string name="time_picker_label">Choose time</string>
+    <string name="prioritize">prioritize</string>
+    <string name="shortest">Shortest travel time</string>
+    <string name="direct">Direct</string>
+    <string name="min_transfer">Minumm transfer time</string>
+    <string name="max_walk">Maximum walking time</string>
+    <string name="min">min</string>
+    <string name="search_progress_info">Search in progress</string>
+    <string name="try_again">Try again</string>
+    
+    <string name="time_picker_setButton">Set</string>
+    <string name="time_picker_cancelButton">Cancel</string>
+    <string name="advance_settings">Advance settings</string>
+    <string name="transport_header">Transport</string>
+    <string name="no_internet_info">Please check your connection or find a location with better coverage, and try again</string>
+    <string name="no_internet_header">No network connection</string>
+    <string name="no_search_match">No place(s) matched your search.</string>
+    <string name="search_info">*At least two letters</string>
+    
+    <string name="now">now</string>
+    
+    <string name="default_min_transfer">2</string>
+    <string name="default_max_walk">20</string>
+    
+     <string name="search_trip">Search for trips</string>
+     <string name="header_stopInArea">Choose a stop in area</string>
+    
+    
+    
+    
+    <!-- Tab label list -->
+    <string-array name="tab_labels">
+        <item>Plan Travel</item>
+        <item>Real-time</item>
+        <item>Search by map</item>
+    </string-array>
+
+    <!-- week day label list -->
+    <string-array name="week_days">
+        <item>Mon.</item>
+        <item>Tue.</item>
+        <item>Wed.</item>
+        <item>Thu.</item>
+        <item>Fri.</item>
+        <item>Sat.</item>
+        <item>Sun.</item>
+    </string-array>
+    
+    <!-- transport label list -->
+    <string-array name="transport_labels">
+        <item>Bus</item>
+        <item>Boat</item>
+        <item>AirportBus</item>
+        <item>AirportTrain</item>
+        <item>Tram</item>
+        <item>Metro</item>
+        <item>Train</item>
+    </string-array>
+
+    <string name="title_activity_choose_place">ChoosePlace</string>
+    <string name="title_activity_realtime">RealTime!</string>
+
+</resources>

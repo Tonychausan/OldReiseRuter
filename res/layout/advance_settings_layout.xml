@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    	<TextView
+		 	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+			android:text="@string/transport_header" />
+
+	    <LinearLayout
+		    android:id="@+id/layout_transport_filter"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:orientation="vertical" >
+	
+		</LinearLayout>
+		<TextView
+		 	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+			android:text="@string/prioritize" />
+		
+		<RadioGroup
+            android:id="@+id/radiogroup_prioritize"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:paddingLeft="10dp">
+            
+		    <RadioButton android:id="@+id/radio_depart"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shortest"
+		        android:checked="true"/>
+		    
+		    <RadioButton android:id="@+id/radio_arrive"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/direct"/>
+		</RadioGroup>
+		
+		<TextView
+		 	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+			android:text="@string/min_transfer" />
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content" 
+		  	android:layout_marginLeft="10dp">
+
+			<EditText
+			    android:id="@+id/min_transfer"
+			    android:layout_width="50dp"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:inputType="number" 
+			    android:text="@string/default_min_transfer"
+			    android:maxLength="2">
+			</EditText>
+
+			<TextView
+			    android:id="@+id/textView1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/min" />
+		</LinearLayout>
+		
+		<TextView
+		 	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+			android:text="@string/max_walk" />
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content" 
+		  	android:layout_marginLeft="10dp">
+
+			<EditText
+			    android:id="@+id/max_walk"
+			    android:layout_width="50dp"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:inputType="number"
+			    android:text="@string/default_max_walk" 
+			    android:maxLength="2">
+			</EditText>
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/min" />
+		    
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>
